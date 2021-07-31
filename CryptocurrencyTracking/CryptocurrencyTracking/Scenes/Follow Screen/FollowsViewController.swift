@@ -9,8 +9,17 @@ import UIKit
 
 final class FollowsViewController: UIViewController {
 
+    var viewModel: FollowsViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
+}
+
+extension FollowsViewController: Bindable {
+    
+    func bindViewModel() {
+        
+    }
 }

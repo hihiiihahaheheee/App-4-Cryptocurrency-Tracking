@@ -11,22 +11,41 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureTabBar()
+        configureView()
 
     }
     
-    private func configureTabBar() {
-        view.backgroundColor = .white
+    private func configureView() {
+        tabBar.do {
+            $0.backgroundColor = .white
+            $0.clipsToBounds = true
+        }
+        
         viewControllers = [
-            configChildNavigationController(viewController: HomeViewController(), item: TabBarItems.home.item),
-            configChildNavigationController(viewController: FollowsViewController(), item: TabBarItems.follows.item)
+            createHomeNavigationController(),
+            createFollowsNavigationController()
         ]
     }
     
-    private func configChildNavigationController(viewController: UIViewController, item: UITabBarItem) -> UINavigationController {
-        let navController = UINavigationController(rootViewController: viewController)
-        navController.tabBarItem = item
-        navController.navigationBar.prefersLargeTitles = true
-        return navController
+    private func createHomeNavigationController() -> UINavigationController {
+        let viewController = HomeViewController()
+        viewController.tabBarItem = TabBarItems.home.item
+        let useCase = HomeUseCase()
+        let navigator = HomeNavigator()
+        let viewModel = HomeViewModel(useCase: useCase, navigator: navigator)
+        viewController.bindViewModel(to: viewModel)
+        let navigationController = BaseNavigationController(rootViewController: viewController)
+        return navigationController
+    }
+    
+    private func createFollowsNavigationController() -> UINavigationController {
+        let viewController = FollowsViewController()
+        viewController.tabBarItem = TabBarItems.follows.item
+        let useCase = FollowsUseCase()
+        let navigator = FollowsNavigator()
+        let viewModel = FollowsViewModel(useCase: useCase, navigator: navigator)
+        viewController.bindViewModel(to: viewModel)
+        let navigationController = BaseNavigationController(rootViewController: viewController)
+        return navigationController
     }
 }
