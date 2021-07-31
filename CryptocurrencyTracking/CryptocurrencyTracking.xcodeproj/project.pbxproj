@@ -10,11 +10,22 @@
 		5E354DCA4F3818F3DA7796E6 /* libPods-CryptocurrencyTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 807DFF06BF53030B30B74DF8 /* libPods-CryptocurrencyTracking.a */; };
 		ECB8C91426B55174004F7C89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C91326B55174004F7C89 /* AppDelegate.swift */; };
 		ECB8C91626B55174004F7C89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C91526B55174004F7C89 /* SceneDelegate.swift */; };
-		ECB8C91826B55174004F7C89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C91726B55174004F7C89 /* ViewController.swift */; };
-		ECB8C91B26B55174004F7C89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C91926B55174004F7C89 /* Main.storyboard */; };
 		ECB8C91E26B55174004F7C89 /* CryptocurrencyTracking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C91C26B55174004F7C89 /* CryptocurrencyTracking.xcdatamodeld */; };
 		ECB8C92026B55176004F7C89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C91F26B55176004F7C89 /* Assets.xcassets */; };
 		ECB8C92326B55176004F7C89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C92126B55176004F7C89 /* LaunchScreen.storyboard */; };
+		ECB8C93526B55770004F7C89 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C93326B55770004F7C89 /* TabBarViewController.swift */; };
+		ECB8C93826B57772004F7C89 /* TabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C93726B57772004F7C89 /* TabBarItems.swift */; };
+		ECB8C93E26B577C5004F7C89 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C93C26B577C5004F7C89 /* HomeViewController.swift */; };
+		ECB8C93F26B577C5004F7C89 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C93D26B577C5004F7C89 /* HomeViewController.xib */; };
+		ECB8C94626B5781D004F7C89 /* DetailtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C94426B5781D004F7C89 /* DetailtsViewController.swift */; };
+		ECB8C94726B5781D004F7C89 /* DetailtsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C94526B5781D004F7C89 /* DetailtsViewController.xib */; };
+		ECB8C94926B578EB004F7C89 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C94826B578EB004F7C89 /* swiftgen.yml */; };
+		ECB8C95226B57A83004F7C89 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C95426B57A83004F7C89 /* Localizable.strings */; };
+		ECB8C95A26B57C3E004F7C89 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C95726B57C3E004F7C89 /* Assets.swift */; };
+		ECB8C95B26B57C3E004F7C89 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C95826B57C3E004F7C89 /* Fonts.swift */; };
+		ECB8C95C26B57C3E004F7C89 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C95926B57C3E004F7C89 /* Localizable.swift */; };
+		ECB8C95F26B57D0B004F7C89 /* FollowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C95D26B57D0B004F7C89 /* FollowsViewController.swift */; };
+		ECB8C96026B57D0B004F7C89 /* FollowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C95E26B57D0B004F7C89 /* FollowsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +34,25 @@
 		ECB8C91026B55174004F7C89 /* CryptocurrencyTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptocurrencyTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB8C91326B55174004F7C89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECB8C91526B55174004F7C89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECB8C91726B55174004F7C89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ECB8C91A26B55174004F7C89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECB8C91D26B55174004F7C89 /* CryptocurrencyTracking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CryptocurrencyTracking.xcdatamodel; sourceTree = "<group>"; };
 		ECB8C91F26B55176004F7C89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECB8C92226B55176004F7C89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECB8C92426B55176004F7C89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECB8C93326B55770004F7C89 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		ECB8C93726B57772004F7C89 /* TabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItems.swift; sourceTree = "<group>"; };
+		ECB8C93C26B577C5004F7C89 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ECB8C93D26B577C5004F7C89 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		ECB8C94426B5781D004F7C89 /* DetailtsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailtsViewController.swift; sourceTree = "<group>"; };
+		ECB8C94526B5781D004F7C89 /* DetailtsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailtsViewController.xib; sourceTree = "<group>"; };
+		ECB8C94826B578EB004F7C89 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		ECB8C95326B57A83004F7C89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ECB8C95526B57AB1004F7C89 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		ECB8C95626B57AB1004F7C89 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ECB8C95726B57C3E004F7C89 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		ECB8C95826B57C3E004F7C89 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		ECB8C95926B57C3E004F7C89 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		ECB8C95D26B57D0B004F7C89 /* FollowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowsViewController.swift; sourceTree = "<group>"; };
+		ECB8C95E26B57D0B004F7C89 /* FollowsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowsViewController.xib; sourceTree = "<group>"; };
 		ED612849068A1012CFA228B0 /* Pods-CryptocurrencyTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptocurrencyTracking.debug.xcconfig"; path = "Target Support Files/Pods-CryptocurrencyTracking/Pods-CryptocurrencyTracking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +74,6 @@
 				ED612849068A1012CFA228B0 /* Pods-CryptocurrencyTracking.debug.xcconfig */,
 				1586466BA2F9405FF920811E /* Pods-CryptocurrencyTracking.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -65,6 +88,7 @@
 		ECB8C90726B55174004F7C89 = {
 			isa = PBXGroup;
 			children = (
+				ECB8C94826B578EB004F7C89 /* swiftgen.yml */,
 				ECB8C91226B55174004F7C89 /* CryptocurrencyTracking */,
 				ECB8C91126B55174004F7C89 /* Products */,
 				8B88E7A5610F33DF052B070A /* Pods */,
@@ -83,16 +107,122 @@
 		ECB8C91226B55174004F7C89 /* CryptocurrencyTracking */ = {
 			isa = PBXGroup;
 			children = (
-				ECB8C91326B55174004F7C89 /* AppDelegate.swift */,
-				ECB8C91526B55174004F7C89 /* SceneDelegate.swift */,
-				ECB8C91726B55174004F7C89 /* ViewController.swift */,
-				ECB8C91926B55174004F7C89 /* Main.storyboard */,
-				ECB8C91F26B55176004F7C89 /* Assets.xcassets */,
-				ECB8C92126B55176004F7C89 /* LaunchScreen.storyboard */,
+				ECB8C92A26B5545F004F7C89 /* AppDelegate */,
+				ECB8C92F26B554F2004F7C89 /* Extensions */,
+				ECB8C92B26B55475004F7C89 /* Resources */,
+				ECB8C92C26B554B3004F7C89 /* Platform */,
+				ECB8C92D26B554BD004F7C89 /* Domain */,
+				ECB8C92E26B554CB004F7C89 /* Scenes */,
+				ECB8C93026B55501004F7C89 /* SwiftGen */,
 				ECB8C92426B55176004F7C89 /* Info.plist */,
 				ECB8C91C26B55174004F7C89 /* CryptocurrencyTracking.xcdatamodeld */,
 			);
 			path = CryptocurrencyTracking;
+			sourceTree = "<group>";
+		};
+		ECB8C92A26B5545F004F7C89 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C91326B55174004F7C89 /* AppDelegate.swift */,
+				ECB8C91526B55174004F7C89 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		ECB8C92B26B55475004F7C89 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C94A26B5791C004F7C89 /* Fonts */,
+				ECB8C91F26B55176004F7C89 /* Assets.xcassets */,
+				ECB8C92126B55176004F7C89 /* LaunchScreen.storyboard */,
+				ECB8C95426B57A83004F7C89 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ECB8C92C26B554B3004F7C89 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		ECB8C92D26B554BD004F7C89 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		ECB8C92E26B554CB004F7C89 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C93226B5574F004F7C89 /* TabBar */,
+				ECB8C93926B57778004F7C89 /* Home Screen */,
+				ECB8C93A26B57784004F7C89 /* Follow Screen */,
+				ECB8C93B26B57794004F7C89 /* Details Screen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		ECB8C92F26B554F2004F7C89 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ECB8C93026B55501004F7C89 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C95726B57C3E004F7C89 /* Assets.swift */,
+				ECB8C95826B57C3E004F7C89 /* Fonts.swift */,
+				ECB8C95926B57C3E004F7C89 /* Localizable.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		ECB8C93226B5574F004F7C89 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C93326B55770004F7C89 /* TabBarViewController.swift */,
+				ECB8C93726B57772004F7C89 /* TabBarItems.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		ECB8C93926B57778004F7C89 /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C93C26B577C5004F7C89 /* HomeViewController.swift */,
+				ECB8C93D26B577C5004F7C89 /* HomeViewController.xib */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		ECB8C93A26B57784004F7C89 /* Follow Screen */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C95D26B57D0B004F7C89 /* FollowsViewController.swift */,
+				ECB8C95E26B57D0B004F7C89 /* FollowsViewController.xib */,
+			);
+			path = "Follow Screen";
+			sourceTree = "<group>";
+		};
+		ECB8C93B26B57794004F7C89 /* Details Screen */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C94426B5781D004F7C89 /* DetailtsViewController.swift */,
+				ECB8C94526B5781D004F7C89 /* DetailtsViewController.xib */,
+			);
+			path = "Details Screen";
+			sourceTree = "<group>";
+		};
+		ECB8C94A26B5791C004F7C89 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +233,7 @@
 			buildConfigurationList = ECB8C92726B55176004F7C89 /* Build configuration list for PBXNativeTarget "CryptocurrencyTracking" */;
 			buildPhases = (
 				C40715C99446138D1DE66E4A /* [CP] Check Pods Manifest.lock */,
+				ECB8C96126B57EB1004F7C89 /* Run SwiftLint */,
 				ECB8C90C26B55174004F7C89 /* Sources */,
 				ECB8C90D26B55174004F7C89 /* Frameworks */,
 				ECB8C90E26B55174004F7C89 /* Resources */,
@@ -137,6 +268,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = ECB8C90726B55174004F7C89;
 			productRefGroup = ECB8C91126B55174004F7C89 /* Products */;
@@ -153,9 +285,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB8C96026B57D0B004F7C89 /* FollowsViewController.xib in Resources */,
 				ECB8C92326B55176004F7C89 /* LaunchScreen.storyboard in Resources */,
+				ECB8C94726B5781D004F7C89 /* DetailtsViewController.xib in Resources */,
 				ECB8C92026B55176004F7C89 /* Assets.xcassets in Resources */,
-				ECB8C91B26B55174004F7C89 /* Main.storyboard in Resources */,
+				ECB8C95226B57A83004F7C89 /* Localizable.strings in Resources */,
+				ECB8C93F26B577C5004F7C89 /* HomeViewController.xib in Resources */,
+				ECB8C94926B578EB004F7C89 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +320,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ECB8C96126B57EB1004F7C89 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -191,30 +345,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECB8C91826B55174004F7C89 /* ViewController.swift in Sources */,
+				ECB8C95C26B57C3E004F7C89 /* Localizable.swift in Sources */,
+				ECB8C94626B5781D004F7C89 /* DetailtsViewController.swift in Sources */,
+				ECB8C95F26B57D0B004F7C89 /* FollowsViewController.swift in Sources */,
+				ECB8C93526B55770004F7C89 /* TabBarViewController.swift in Sources */,
 				ECB8C91426B55174004F7C89 /* AppDelegate.swift in Sources */,
+				ECB8C93826B57772004F7C89 /* TabBarItems.swift in Sources */,
 				ECB8C91E26B55174004F7C89 /* CryptocurrencyTracking.xcdatamodeld in Sources */,
 				ECB8C91626B55174004F7C89 /* SceneDelegate.swift in Sources */,
+				ECB8C95B26B57C3E004F7C89 /* Fonts.swift in Sources */,
+				ECB8C93E26B577C5004F7C89 /* HomeViewController.swift in Sources */,
+				ECB8C95A26B57C3E004F7C89 /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ECB8C91926B55174004F7C89 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECB8C91A26B55174004F7C89 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ECB8C92126B55176004F7C89 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ECB8C92226B55176004F7C89 /* Base */,
+				ECB8C95526B57AB1004F7C89 /* vi */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ECB8C95426B57A83004F7C89 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECB8C95326B57A83004F7C89 /* en */,
+				ECB8C95626B57AB1004F7C89 /* vi */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -224,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -285,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
