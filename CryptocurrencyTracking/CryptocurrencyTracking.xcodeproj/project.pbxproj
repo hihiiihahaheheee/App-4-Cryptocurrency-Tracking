@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,8 +17,6 @@
 		ECB8C93826B57772004F7C89 /* TabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C93726B57772004F7C89 /* TabBarItems.swift */; };
 		ECB8C93E26B577C5004F7C89 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C93C26B577C5004F7C89 /* HomeViewController.swift */; };
 		ECB8C93F26B577C5004F7C89 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C93D26B577C5004F7C89 /* HomeViewController.xib */; };
-		ECB8C94626B5781D004F7C89 /* DetailtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C94426B5781D004F7C89 /* DetailtsViewController.swift */; };
-		ECB8C94726B5781D004F7C89 /* DetailtsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C94526B5781D004F7C89 /* DetailtsViewController.xib */; };
 		ECB8C94926B578EB004F7C89 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C94826B578EB004F7C89 /* swiftgen.yml */; };
 		ECB8C95226B57A83004F7C89 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C95426B57A83004F7C89 /* Localizable.strings */; };
 		ECB8C95A26B57C3E004F7C89 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C95726B57C3E004F7C89 /* Assets.swift */; };
@@ -26,6 +24,26 @@
 		ECB8C95C26B57C3E004F7C89 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C95926B57C3E004F7C89 /* Localizable.swift */; };
 		ECB8C95F26B57D0B004F7C89 /* FollowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C95D26B57D0B004F7C89 /* FollowsViewController.swift */; };
 		ECB8C96026B57D0B004F7C89 /* FollowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C95E26B57D0B004F7C89 /* FollowsViewController.xib */; };
+		ECB8C96726B583B4004F7C89 /* CoinsResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C96626B583B4004F7C89 /* CoinsResponses.swift */; };
+		ECB8C96926B583C1004F7C89 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C96826B583C1004F7C89 /* CoinModel.swift */; };
+		ECB8C96B26B583E1004F7C89 /* CoinDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C96A26B583E1004F7C89 /* CoinDetails.swift */; };
+		ECB8C96E26B583FD004F7C89 /* CoinDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C96C26B583FD004F7C89 /* CoinDetailsViewController.swift */; };
+		ECB8C96F26B583FD004F7C89 /* CoinDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB8C96D26B583FD004F7C89 /* CoinDetailsViewController.xib */; };
+		ECB8C97226B5846D004F7C89 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = ECB8C97126B5846D004F7C89 /* ObjectMapper */; };
+		ECB8C97526B584B1004F7C89 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = ECB8C97426B584B1004F7C89 /* Then */; };
+		ECB8C97726B5857E004F7C89 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C97626B5857E004F7C89 /* DataModel.swift */; };
+		ECB8C97A26B5899B004F7C89 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ECB8C97926B5899B004F7C89 /* Alamofire */; };
+		ECB8C97D26B589B5004F7C89 /* APIServies.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C97C26B589B5004F7C89 /* APIServies.swift */; };
+		ECB8C98026B58CEC004F7C89 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ECB8C97F26B58CEC004F7C89 /* RxSwift */; };
+		ECB8C98226B58CEC004F7C89 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = ECB8C98126B58CEC004F7C89 /* RxRelay */; };
+		ECB8C98426B58CEC004F7C89 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = ECB8C98326B58CEC004F7C89 /* RxCocoa */; };
+		ECB8C98626B58CEC004F7C89 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = ECB8C98526B58CEC004F7C89 /* RxBlocking */; };
+		ECB8C98926B58D1D004F7C89 /* BaseErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C98826B58D1D004F7C89 /* BaseErrors.swift */; };
+		ECB8C98D26B58E37004F7C89 /* CoinsURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C98C26B58E37004F7C89 /* CoinsURLs.swift */; };
+		ECB8C98F26B58F4A004F7C89 /* APIServies+getAllCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C98E26B58F4A004F7C89 /* APIServies+getAllCoin.swift */; };
+		ECB8C99126B58F5A004F7C89 /* APIServies+getCoinDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C99026B58F5A004F7C89 /* APIServies+getCoinDetails.swift */; };
+		ECB8C99326B58F9F004F7C89 /* ObservableType+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C99226B58F9F004F7C89 /* ObservableType+.swift */; };
+		ECB8C99526B59014004F7C89 /* SharedSequenceConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C99426B59014004F7C89 /* SharedSequenceConvertibleType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +60,6 @@
 		ECB8C93726B57772004F7C89 /* TabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItems.swift; sourceTree = "<group>"; };
 		ECB8C93C26B577C5004F7C89 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ECB8C93D26B577C5004F7C89 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		ECB8C94426B5781D004F7C89 /* DetailtsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailtsViewController.swift; sourceTree = "<group>"; };
-		ECB8C94526B5781D004F7C89 /* DetailtsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailtsViewController.xib; sourceTree = "<group>"; };
 		ECB8C94826B578EB004F7C89 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		ECB8C95326B57A83004F7C89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ECB8C95526B57AB1004F7C89 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -53,6 +69,19 @@
 		ECB8C95926B57C3E004F7C89 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		ECB8C95D26B57D0B004F7C89 /* FollowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowsViewController.swift; sourceTree = "<group>"; };
 		ECB8C95E26B57D0B004F7C89 /* FollowsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowsViewController.xib; sourceTree = "<group>"; };
+		ECB8C96626B583B4004F7C89 /* CoinsResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsResponses.swift; sourceTree = "<group>"; };
+		ECB8C96826B583C1004F7C89 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		ECB8C96A26B583E1004F7C89 /* CoinDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetails.swift; sourceTree = "<group>"; };
+		ECB8C96C26B583FD004F7C89 /* CoinDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsViewController.swift; sourceTree = "<group>"; };
+		ECB8C96D26B583FD004F7C89 /* CoinDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinDetailsViewController.xib; sourceTree = "<group>"; };
+		ECB8C97626B5857E004F7C89 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		ECB8C97C26B589B5004F7C89 /* APIServies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServies.swift; sourceTree = "<group>"; };
+		ECB8C98826B58D1D004F7C89 /* BaseErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseErrors.swift; sourceTree = "<group>"; };
+		ECB8C98C26B58E37004F7C89 /* CoinsURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsURLs.swift; sourceTree = "<group>"; };
+		ECB8C98E26B58F4A004F7C89 /* APIServies+getAllCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIServies+getAllCoin.swift"; sourceTree = "<group>"; };
+		ECB8C99026B58F5A004F7C89 /* APIServies+getCoinDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIServies+getCoinDetails.swift"; sourceTree = "<group>"; };
+		ECB8C99226B58F9F004F7C89 /* ObservableType+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+.swift"; sourceTree = "<group>"; };
+		ECB8C99426B59014004F7C89 /* SharedSequenceConvertibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedSequenceConvertibleType.swift; sourceTree = "<group>"; };
 		ED612849068A1012CFA228B0 /* Pods-CryptocurrencyTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptocurrencyTracking.debug.xcconfig"; path = "Target Support Files/Pods-CryptocurrencyTracking/Pods-CryptocurrencyTracking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +90,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB8C98226B58CEC004F7C89 /* RxRelay in Frameworks */,
+				ECB8C97226B5846D004F7C89 /* ObjectMapper in Frameworks */,
+				ECB8C97A26B5899B004F7C89 /* Alamofire in Frameworks */,
+				ECB8C98426B58CEC004F7C89 /* RxCocoa in Frameworks */,
+				ECB8C98026B58CEC004F7C89 /* RxSwift in Frameworks */,
+				ECB8C98626B58CEC004F7C89 /* RxBlocking in Frameworks */,
+				ECB8C97526B584B1004F7C89 /* Then in Frameworks */,
 				5E354DCA4F3818F3DA7796E6 /* libPods-CryptocurrencyTracking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,12 +146,11 @@
 				ECB8C92A26B5545F004F7C89 /* AppDelegate */,
 				ECB8C92F26B554F2004F7C89 /* Extensions */,
 				ECB8C92B26B55475004F7C89 /* Resources */,
-				ECB8C92C26B554B3004F7C89 /* Platform */,
-				ECB8C92D26B554BD004F7C89 /* Domain */,
+				ECB8C96426B5835D004F7C89 /* Platform */,
+				ECB8C96326B58332004F7C89 /* Domain */,
 				ECB8C92E26B554CB004F7C89 /* Scenes */,
 				ECB8C93026B55501004F7C89 /* SwiftGen */,
 				ECB8C92426B55176004F7C89 /* Info.plist */,
-				ECB8C91C26B55174004F7C89 /* CryptocurrencyTracking.xcdatamodeld */,
 			);
 			path = CryptocurrencyTracking;
 			sourceTree = "<group>";
@@ -140,20 +175,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		ECB8C92C26B554B3004F7C89 /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
-		ECB8C92D26B554BD004F7C89 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		ECB8C92E26B554CB004F7C89 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +189,8 @@
 		ECB8C92F26B554F2004F7C89 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				ECB8C99226B58F9F004F7C89 /* ObservableType+.swift */,
+				ECB8C99426B59014004F7C89 /* SharedSequenceConvertibleType.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -212,8 +235,8 @@
 		ECB8C93B26B57794004F7C89 /* Details Screen */ = {
 			isa = PBXGroup;
 			children = (
-				ECB8C94426B5781D004F7C89 /* DetailtsViewController.swift */,
-				ECB8C94526B5781D004F7C89 /* DetailtsViewController.xib */,
+				ECB8C96C26B583FD004F7C89 /* CoinDetailsViewController.swift */,
+				ECB8C96D26B583FD004F7C89 /* CoinDetailsViewController.xib */,
 			);
 			path = "Details Screen";
 			sourceTree = "<group>";
@@ -223,6 +246,70 @@
 			children = (
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		ECB8C96326B58332004F7C89 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C96526B58370004F7C89 /* Models */,
+				ECB8C91C26B55174004F7C89 /* CryptocurrencyTracking.xcdatamodeld */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		ECB8C96426B5835D004F7C89 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C97B26B5899F004F7C89 /* Services */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		ECB8C96526B58370004F7C89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C96626B583B4004F7C89 /* CoinsResponses.swift */,
+				ECB8C97626B5857E004F7C89 /* DataModel.swift */,
+				ECB8C96826B583C1004F7C89 /* CoinModel.swift */,
+				ECB8C96A26B583E1004F7C89 /* CoinDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ECB8C97B26B5899F004F7C89 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C97C26B589B5004F7C89 /* APIServies.swift */,
+				ECB8C98B26B58E12004F7C89 /* URLs */,
+				ECB8C98A26B58DE3004F7C89 /* Extensions APIServies */,
+				ECB8C98726B58D07004F7C89 /* Errors */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ECB8C98726B58D07004F7C89 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C98826B58D1D004F7C89 /* BaseErrors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		ECB8C98A26B58DE3004F7C89 /* Extensions APIServies */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C98E26B58F4A004F7C89 /* APIServies+getAllCoin.swift */,
+				ECB8C99026B58F5A004F7C89 /* APIServies+getCoinDetails.swift */,
+			);
+			path = "Extensions APIServies";
+			sourceTree = "<group>";
+		};
+		ECB8C98B26B58E12004F7C89 /* URLs */ = {
+			isa = PBXGroup;
+			children = (
+				ECB8C98C26B58E37004F7C89 /* CoinsURLs.swift */,
+			);
+			path = URLs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +330,15 @@
 			dependencies = (
 			);
 			name = CryptocurrencyTracking;
+			packageProductDependencies = (
+				ECB8C97126B5846D004F7C89 /* ObjectMapper */,
+				ECB8C97426B584B1004F7C89 /* Then */,
+				ECB8C97926B5899B004F7C89 /* Alamofire */,
+				ECB8C97F26B58CEC004F7C89 /* RxSwift */,
+				ECB8C98126B58CEC004F7C89 /* RxRelay */,
+				ECB8C98326B58CEC004F7C89 /* RxCocoa */,
+				ECB8C98526B58CEC004F7C89 /* RxBlocking */,
+			);
 			productName = CryptocurrencyTracking;
 			productReference = ECB8C91026B55174004F7C89 /* CryptocurrencyTracking.app */;
 			productType = "com.apple.product-type.application";
@@ -271,6 +367,12 @@
 				vi,
 			);
 			mainGroup = ECB8C90726B55174004F7C89;
+			packageReferences = (
+				ECB8C97026B5846D004F7C89 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				ECB8C97326B584B1004F7C89 /* XCRemoteSwiftPackageReference "Then" */,
+				ECB8C97826B5899B004F7C89 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				ECB8C97E26B58CEC004F7C89 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = ECB8C91126B55174004F7C89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -287,8 +389,8 @@
 			files = (
 				ECB8C96026B57D0B004F7C89 /* FollowsViewController.xib in Resources */,
 				ECB8C92326B55176004F7C89 /* LaunchScreen.storyboard in Resources */,
-				ECB8C94726B5781D004F7C89 /* DetailtsViewController.xib in Resources */,
 				ECB8C92026B55176004F7C89 /* Assets.xcassets in Resources */,
+				ECB8C96F26B583FD004F7C89 /* CoinDetailsViewController.xib in Resources */,
 				ECB8C95226B57A83004F7C89 /* Localizable.strings in Resources */,
 				ECB8C93F26B577C5004F7C89 /* HomeViewController.xib in Resources */,
 				ECB8C94926B578EB004F7C89 /* swiftgen.yml in Resources */,
@@ -345,16 +447,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB8C99326B58F9F004F7C89 /* ObservableType+.swift in Sources */,
 				ECB8C95C26B57C3E004F7C89 /* Localizable.swift in Sources */,
-				ECB8C94626B5781D004F7C89 /* DetailtsViewController.swift in Sources */,
 				ECB8C95F26B57D0B004F7C89 /* FollowsViewController.swift in Sources */,
+				ECB8C98D26B58E37004F7C89 /* CoinsURLs.swift in Sources */,
+				ECB8C99126B58F5A004F7C89 /* APIServies+getCoinDetails.swift in Sources */,
+				ECB8C97D26B589B5004F7C89 /* APIServies.swift in Sources */,
+				ECB8C98926B58D1D004F7C89 /* BaseErrors.swift in Sources */,
+				ECB8C96E26B583FD004F7C89 /* CoinDetailsViewController.swift in Sources */,
 				ECB8C93526B55770004F7C89 /* TabBarViewController.swift in Sources */,
 				ECB8C91426B55174004F7C89 /* AppDelegate.swift in Sources */,
+				ECB8C97726B5857E004F7C89 /* DataModel.swift in Sources */,
+				ECB8C99526B59014004F7C89 /* SharedSequenceConvertibleType.swift in Sources */,
+				ECB8C96726B583B4004F7C89 /* CoinsResponses.swift in Sources */,
 				ECB8C93826B57772004F7C89 /* TabBarItems.swift in Sources */,
+				ECB8C96B26B583E1004F7C89 /* CoinDetails.swift in Sources */,
 				ECB8C91E26B55174004F7C89 /* CryptocurrencyTracking.xcdatamodeld in Sources */,
 				ECB8C91626B55174004F7C89 /* SceneDelegate.swift in Sources */,
 				ECB8C95B26B57C3E004F7C89 /* Fonts.swift in Sources */,
+				ECB8C96926B583C1004F7C89 /* CoinModel.swift in Sources */,
 				ECB8C93E26B577C5004F7C89 /* HomeViewController.swift in Sources */,
+				ECB8C98F26B58F4A004F7C89 /* APIServies+getAllCoin.swift in Sources */,
 				ECB8C95A26B57C3E004F7C89 /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,6 +676,79 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECB8C97026B5846D004F7C89 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		ECB8C97326B584B1004F7C89 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+		ECB8C97826B5899B004F7C89 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		ECB8C97E26B58CEC004F7C89 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECB8C97126B5846D004F7C89 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECB8C97026B5846D004F7C89 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		ECB8C97426B584B1004F7C89 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECB8C97326B584B1004F7C89 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		ECB8C97926B5899B004F7C89 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECB8C97826B5899B004F7C89 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		ECB8C97F26B58CEC004F7C89 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECB8C97E26B58CEC004F7C89 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		ECB8C98126B58CEC004F7C89 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECB8C97E26B58CEC004F7C89 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		ECB8C98326B58CEC004F7C89 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECB8C97E26B58CEC004F7C89 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		ECB8C98526B58CEC004F7C89 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECB8C97E26B58CEC004F7C89 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		ECB8C91C26B55174004F7C89 /* CryptocurrencyTracking.xcdatamodeld */ = {
