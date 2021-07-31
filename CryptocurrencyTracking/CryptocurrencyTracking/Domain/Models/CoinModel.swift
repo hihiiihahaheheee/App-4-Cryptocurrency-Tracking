@@ -55,6 +55,7 @@ extension CoinModel: Mappable {
     mutating func mapping(map: Map) {
         uuid <- map["uuid"]
         symbol <- map["symbol"]
+        name <- map["name"]
         iconUrl <- map["iconUrl"]
         marketCap <- map["marketCap"]
         price <- map["price"]

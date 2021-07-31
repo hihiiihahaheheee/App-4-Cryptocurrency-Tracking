@@ -17,7 +17,7 @@ class TabBarViewController: UITabBarController {
     
     private func configureView() {
         tabBar.do {
-            $0.backgroundColor = .white
+            $0.backgroundColor = .secondarySystemBackground
             $0.clipsToBounds = true
         }
         
@@ -30,22 +30,22 @@ class TabBarViewController: UITabBarController {
     private func createHomeNavigationController() -> UINavigationController {
         let viewController = HomeViewController()
         viewController.tabBarItem = TabBarItems.home.item
-        let useCase = HomeUseCase()
-        let navigator = HomeNavigator()
+        let navigationController = BaseNavigationController(rootViewController: viewController)
+        let useCase = HomeUseCase(coinRemoteRepository: CoinRemoteRepository())
+        let navigator = HomeNavigator(navigationController: navigationController)
         let viewModel = HomeViewModel(useCase: useCase, navigator: navigator)
         viewController.bindViewModel(to: viewModel)
-        let navigationController = BaseNavigationController(rootViewController: viewController)
         return navigationController
     }
     
     private func createFollowsNavigationController() -> UINavigationController {
         let viewController = FollowsViewController()
         viewController.tabBarItem = TabBarItems.follows.item
+        let navigationController = BaseNavigationController(rootViewController: viewController)
         let useCase = FollowsUseCase()
         let navigator = FollowsNavigator()
         let viewModel = FollowsViewModel(useCase: useCase, navigator: navigator)
         viewController.bindViewModel(to: viewModel)
-        let navigationController = BaseNavigationController(rootViewController: viewController)
         return navigationController
     }
 }
