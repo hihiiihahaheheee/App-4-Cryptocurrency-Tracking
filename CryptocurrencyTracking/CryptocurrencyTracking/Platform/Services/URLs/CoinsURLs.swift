@@ -25,4 +25,8 @@ struct CoinsURLs {
         return baseURL + "/coin/" + uuid
     }
     
+    public func search(name: String) -> String {
+        return baseURL + "search-suggestions?query=\(name)"
+    }
+    
 }

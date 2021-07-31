@@ -11,8 +11,12 @@ final class HomeViewController: UIViewController {
     
     @IBOutlet private weak var coinsCollectionView: UICollectionView!
     
+    var viewModel: HomeViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
+        configureCollectionView()
     }
     
     private func configureView() {
@@ -22,5 +26,11 @@ final class HomeViewController: UIViewController {
     private func configureCollectionView() {
         
     }
+}
+
+extension HomeViewController: Bindable {
     
+    public func bindViewModel() {
+        
+    }
 }
