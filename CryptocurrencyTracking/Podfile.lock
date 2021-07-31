@@ -1,0 +1,22 @@
+PODS:
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - SwiftGen (6.4.0)
+
+DEPENDENCIES:
+  - Charts
+  - SwiftGen
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - SwiftGen
+
+SPEC CHECKSUMS:
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
+
+PODFILE CHECKSUM: 414cb60bd0986565769123ee1026f9472a47f80b
+
+COCOAPODS: 1.10.1

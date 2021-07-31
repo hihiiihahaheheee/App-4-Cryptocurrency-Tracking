@@ -1,0 +1,18 @@
+strings:
+  inputs: CryptocurrencyTracking/Resources/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: CryptocurrencyTracking/SwiftGen/Localizable.swift
+
+xcassets:
+  inputs:
+    - CryptocurrencyTracking/Resources/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: CryptocurrencyTracking/SwiftGen/Assets.swift
+      
+fonts:
+  inputs: CryptocurrencyTracking/Resources/Fonts
+  outputs:
+    templateName: swift5
+    output: CryptocurrencyTracking/SwiftGen/Fonts.swift
