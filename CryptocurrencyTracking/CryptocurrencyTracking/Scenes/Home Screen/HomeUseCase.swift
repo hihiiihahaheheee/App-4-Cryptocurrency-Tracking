@@ -6,11 +6,18 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
 
 protocol HomeUseCaseType {
-    
+    func getAllCoin() -> Observable<[CoinModel]>
 }
 
 struct HomeUseCase: HomeUseCaseType {
     
+    let coinRemoteRepository: CoinRemoteRepositoryType
+    
+    func getAllCoin() -> Observable<[CoinModel]> {
+        return coinRemoteRepository.getAllCoin()
+    }
 }

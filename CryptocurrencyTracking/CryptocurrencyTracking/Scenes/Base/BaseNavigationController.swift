@@ -19,7 +19,7 @@ final class BaseNavigationController: UINavigationController {
         delegate = self
         navigationBar.do {
             $0.isTranslucent = false
-            $0.backgroundColor = .white
+            $0.backgroundColor = .secondarySystemBackground
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  CoinsURLs.swift
+//  CoinURLs.swift
 //  CryptocurrencyTracking
 //
 //  Created by Thuận Nguyễn Văn on 31/07/2021.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct CoinsURLs {
+struct CoinURLs {
     
-    public static let shared = CoinsURLs()
+    public static let shared = CoinURLs()
     
     private var baseURL: String
     
