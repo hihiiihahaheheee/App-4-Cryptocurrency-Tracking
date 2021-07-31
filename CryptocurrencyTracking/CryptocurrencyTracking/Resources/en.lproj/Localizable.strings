@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  CryptocurrencyTracking
+
+  Created by Thuận Nguyễn Văn on 31/07/2021.
+  
+*/
+
+"HomeTitle" = "Home";
+"FollowsTitle" = "Follows";

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  CryptocurrencyTracking
 //
 //  Created by Thuận Nguyễn Văn on 31/07/2021.
@@ -7,13 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
