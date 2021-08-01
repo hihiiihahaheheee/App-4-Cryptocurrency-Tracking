@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
+
+extension APIServices {
+    
+    func getSearchResults(query: String) -> Observable<[CoinModel]> {
+        let urlRequest = CoinURLs.shared.search(name: query)
+        return APIServices.shared.request(URL: urlRequest, responseType: CoinsResponses.self)
+            .map { coinsResponses in
+                return coinsResponses.data.coins
+            }
+    }
+}

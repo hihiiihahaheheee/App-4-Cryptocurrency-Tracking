@@ -10,7 +10,10 @@ import RxCocoa
 import RxSwift
 
 protocol HomeUseCaseType {
+    
     func getAllCoin() -> Observable<[CoinModel]>
+    
+    func getSearchResults(query: String) -> Observable<[CoinModel]>
 }
 
 struct HomeUseCase: HomeUseCaseType {
@@ -19,5 +22,9 @@ struct HomeUseCase: HomeUseCaseType {
     
     func getAllCoin() -> Observable<[CoinModel]> {
         return coinRemoteRepository.getAllCoin()
+    }
+    
+    func getSearchResults(query: String) -> Observable<[CoinModel]> {
+        return coinRemoteRepository.getSearchResults(query: query)
     }
 }
