@@ -18,7 +18,9 @@ struct HomeNavigator: HomeNavigatorType {
     
     func pushDetailsViewController(coin: CoinModel) {
         let viewController = DetailsViewController()
-        
+        let useCase = DetailsUseCase()
+        let viewModel = DetailsViewModel(useCase: useCase, coin: coin)
+        viewController.bindViewModel(to: viewModel)
         navigationController.pushViewController(viewController, animated: true)
     }
 }

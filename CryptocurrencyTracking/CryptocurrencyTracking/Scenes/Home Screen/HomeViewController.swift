@@ -57,7 +57,8 @@ extension HomeViewController: Bindable {
         
         let input = HomeViewModel.Input(loadTrigger: Driver.just(()),
                                         selectTrigger: coinsCollectionView.rx.itemSelected
-                                            .asDriver())
+                                            .asDriver(),
+                                        searchTrigger: searchBar.rx.text.orEmpty.asDriver())
         let output = viewModel.transform(input)
         
         output.coins
