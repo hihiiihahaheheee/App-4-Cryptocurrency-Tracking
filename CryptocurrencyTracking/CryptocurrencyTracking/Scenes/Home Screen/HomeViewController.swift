@@ -22,6 +22,7 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
         configureView()
         configureCollectionView()
+        hideKeyboardWhenTappedAround()
     }
     
     private func configureView() {
@@ -71,8 +72,21 @@ extension HomeViewController: Bindable {
             }
             .disposed(by: rx.disposeBag)
         
-        output.selected
-            .drive()
-            .disposed(by: rx.disposeBag)
+        output.voidDrivers.forEach {
+            $0.drive()
+                .disposed(by: rx.disposeBag)
+        }
+    }
+}
+
+extension HomeViewController {
+    private func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
