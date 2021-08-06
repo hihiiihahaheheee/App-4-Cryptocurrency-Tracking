@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5E354DCA4F3818F3DA7796E6 /* libPods-CryptocurrencyTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 807DFF06BF53030B30B74DF8 /* libPods-CryptocurrencyTracking.a */; };
+		EC428EED26BCCF220087BF6A /* TimePeriodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC428EEB26BCCF220087BF6A /* TimePeriodCollectionViewCell.swift */; };
+		EC428EEE26BCCF220087BF6A /* TimePeriodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC428EEC26BCCF220087BF6A /* TimePeriodCollectionViewCell.xib */; };
 		EC4E7AD626B5B2020070DEC4 /* DetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E7AD526B5B2020070DEC4 /* DetailsUseCase.swift */; };
 		EC4E7AD826B5B2100070DEC4 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E7AD726B5B2100070DEC4 /* DetailsViewModel.swift */; };
 		EC4E7ADA26B5B21A0070DEC4 /* DetailsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E7AD926B5B21A0070DEC4 /* DetailsNavigator.swift */; };
@@ -84,6 +86,8 @@
 /* Begin PBXFileReference section */
 		1586466BA2F9405FF920811E /* Pods-CryptocurrencyTracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptocurrencyTracking.release.xcconfig"; path = "Target Support Files/Pods-CryptocurrencyTracking/Pods-CryptocurrencyTracking.release.xcconfig"; sourceTree = "<group>"; };
 		807DFF06BF53030B30B74DF8 /* libPods-CryptocurrencyTracking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CryptocurrencyTracking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC428EEB26BCCF220087BF6A /* TimePeriodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePeriodCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC428EEC26BCCF220087BF6A /* TimePeriodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimePeriodCollectionViewCell.xib; sourceTree = "<group>"; };
 		EC4E7AD526B5B2020070DEC4 /* DetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsUseCase.swift; sourceTree = "<group>"; };
 		EC4E7AD726B5B2100070DEC4 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		EC4E7AD926B5B21A0070DEC4 /* DetailsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNavigator.swift; sourceTree = "<group>"; };
@@ -191,6 +195,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EC428EEA26BCCF080087BF6A /* TimePeriod Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EC428EEB26BCCF220087BF6A /* TimePeriodCollectionViewCell.swift */,
+				EC428EEC26BCCF220087BF6A /* TimePeriodCollectionViewCell.xib */,
+			);
+			path = "TimePeriod Cell";
+			sourceTree = "<group>";
+		};
 		EC4E7ADE26B5B6F70070DEC4 /* Home Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +245,7 @@
 		EC9604AE26BC2C37005B2695 /* Chart Cell */ = {
 			isa = PBXGroup;
 			children = (
+				EC428EEA26BCCF080087BF6A /* TimePeriod Cell */,
 				EC9604AF26BC2C44005B2695 /* ChartCollectionViewCell.swift */,
 				EC9604B026BC2C44005B2695 /* ChartCollectionViewCell.xib */,
 			);
@@ -568,6 +582,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC428EEE26BCCF220087BF6A /* TimePeriodCollectionViewCell.xib in Resources */,
 				ECB8C96026B57D0B004F7C89 /* FollowsViewController.xib in Resources */,
 				ECB8C92326B55176004F7C89 /* LaunchScreen.storyboard in Resources */,
 				ECB8C92026B55176004F7C89 /* Assets.xcassets in Resources */,
@@ -679,6 +694,7 @@
 				ECB8C98F26B58F4A004F7C89 /* APIServies+getAllCoin.swift in Sources */,
 				ECB8C9A126B5A39C004F7C89 /* FollowsUseCase.swift in Sources */,
 				ECB8C95A26B57C3E004F7C89 /* Assets.swift in Sources */,
+				EC428EED26BCCF220087BF6A /* TimePeriodCollectionViewCell.swift in Sources */,
 				EC4E7AD826B5B2100070DEC4 /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

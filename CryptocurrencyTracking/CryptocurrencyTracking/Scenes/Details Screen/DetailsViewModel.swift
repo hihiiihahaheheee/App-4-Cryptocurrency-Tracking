@@ -19,36 +19,35 @@ extension DetailsViewModel: ViewModel {
     
     struct Input {
         var loadTrigger: Driver<Void>
+        var timeTrigger: Driver<String>
     }
     
     struct Output {
-        var loadData: Driver<CoinDetailsModel>
+        var loadChart: Driver<[HistoryModel]>
         var details: Driver<[DetailsSectionModel]>
     }
     
     func transform(_ input: Input) -> Output {
         
-        let loadDetails = input.loadTrigger
+        let loadCharts = input.timeTrigger
+            .flatMapLatest { timePeriod -> Driver<[HistoryModel]> in
+                return useCase.getChartData(uuid: coin.uuid, timePeriod: timePeriod)
+                    .asDriverOnErrorJustComplete()
+            }
+        
+        let details = input.loadTrigger
             .flatMapLatest({ _ in
                 return useCase.getCoinDetails(uuid: coin.uuid)
                     .asDriverOnErrorJustComplete()
             })
-        
-        let loadCharts = input.loadTrigger
-            .flatMapLatest { _ in
-                return useCase.getChartData(uuid: coin.uuid, timePeriod: "1y")
-                    .asDriverOnErrorJustComplete()
-            }
-        
-        let details = Driver.combineLatest(loadDetails, loadCharts)
-            .map { (coinDetails, history) -> [DetailsSectionModel] in
+            .map { coinDetails -> [DetailsSectionModel] in
                 return [.detail(items: [
                     .info(model: coinDetails),
-                    .chart(model: history),
+                    .chart(model: loadCharts),
                     .detail(model: coinDetails)
                 ])]
             }
         
-        return Output(loadData: loadDetails, details: details)
+        return Output(loadChart: loadCharts, details: details)
     }
 }
