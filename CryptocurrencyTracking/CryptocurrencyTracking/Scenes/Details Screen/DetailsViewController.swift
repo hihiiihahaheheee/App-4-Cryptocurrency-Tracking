@@ -17,6 +17,7 @@ final class DetailsViewController: UIViewController {
     
     typealias DataSource = RxCollectionViewSectionedReloadDataSource<DetailsSectionModel>
     private var dataSource: DataSource!
+    private let timeTrigger = BehaviorSubject<String>(value: "24h")
     
     var viewModel: DetailsViewModel!
     
@@ -49,10 +50,12 @@ final class DetailsViewController: UIViewController {
 extension DetailsViewController: Bindable {
     func bindViewModel() {
         
-        let input = DetailsViewModel.Input(loadTrigger: Driver.just(()))
+        let input = DetailsViewModel.Input(loadTrigger: Driver.just(()),
+                                           timeTrigger: timeTrigger
+                                            .asDriver(onErrorJustReturn: "24h"))
         let output = viewModel.transform(input)
         
-        output.loadData
+        output.loadChart
             .drive()
             .disposed(by: rx.disposeBag)
         
@@ -71,10 +74,11 @@ extension DetailsViewController {
                                                               cellType: InfoCollectionViewCell.self)
                 cell.configureCell(coinDetails: model)
                 return cell
-            case .chart( _ ):
+            case .chart(let model):
                 let cell = collectionView.dequeueReusableCell(for: indexPath,
                                                               cellType: ChartCollectionViewCell.self)
-                cell.backgroundColor = .green
+                cell.timeSegmentsChanged = { self.timeTrigger.onNext($0) }
+                cell.configureCell(history: model)
                 return cell
             case .detail( _ ):
                 let cell = collectionView.dequeueReusableCell(for: indexPath,
@@ -93,9 +97,9 @@ extension DetailsViewController: UICollectionViewDelegateFlowLayout {
         case .info:
             return CGSize(width: detailsCollectionView.frame.width, height: 130)
         case .chart:
-            return CGSize(width: detailsCollectionView.frame.width - 30, height: 600)
+            return CGSize(width: detailsCollectionView.frame.width, height: 350)
         case .detail:
-            return CGSize(width: detailsCollectionView.frame.width - 30, height: 400)
+            return CGSize(width: detailsCollectionView.frame.width, height: 400)
         }
     }
     

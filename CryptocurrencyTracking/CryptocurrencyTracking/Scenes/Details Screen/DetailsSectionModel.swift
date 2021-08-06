@@ -17,7 +17,7 @@ enum DetailsSectionModel {
 
 enum SectionItems {
     case info(model: CoinDetailsModel)
-    case chart(model: [HistoryModel])
+    case chart(model: Driver<[HistoryModel]>)
     case detail(model: CoinDetailsModel)
 }
 
