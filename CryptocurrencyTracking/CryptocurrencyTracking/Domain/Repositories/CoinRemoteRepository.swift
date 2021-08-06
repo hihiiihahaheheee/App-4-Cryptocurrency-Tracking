@@ -16,6 +16,8 @@ protocol CoinRemoteRepositoryType {
     func getSearchResults(query: String) -> Observable<[CoinModel]>
     
     func getCoinDetails(uuid: String) -> Observable<CoinDetailsModel>
+    
+    func getChartData(uuid: String, timePeriod: String) -> Observable<[HistoryModel]>
 }
 
 struct CoinRemoteRepository: CoinRemoteRepositoryType {
@@ -30,5 +32,9 @@ struct CoinRemoteRepository: CoinRemoteRepositoryType {
     
     func getCoinDetails(uuid: String) -> Observable<CoinDetailsModel> {
         return APIServices.shared.getCoinDetails(uuid: uuid)
+    }
+    
+    func getChartData(uuid: String, timePeriod: String) -> Observable<[HistoryModel]> {
+        return APIServices.shared.getChartData(uuid: uuid, timePeriod: timePeriod)
     }
 }

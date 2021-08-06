@@ -22,11 +22,14 @@ struct CoinURLs {
     }
     
     public func coinDetail(uuid: String) -> String {
-        return baseURL + "/coin/" + uuid
+        return baseURL + "coin/" + uuid
     }
     
     public func search(name: String) -> String {
         return baseURL + "search-suggestions?query=\(name)"
     }
     
+    public func chartData(uuid: String, timePeriod: String) -> String {
+        return baseURL + "coin/\(uuid)/history?timePeriod=\(timePeriod)"
+    }
 }
