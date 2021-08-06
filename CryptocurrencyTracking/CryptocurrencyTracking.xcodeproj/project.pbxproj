@@ -20,9 +20,20 @@
 		EC4E7AEF26B5CF8D0070DEC4 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4E7AED26B5CF8D0070DEC4 /* DetailsViewController.xib */; };
 		EC58334226B678BC00226B10 /* DetailsResponsesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58334126B678BC00226B10 /* DetailsResponsesModel.swift */; };
 		EC58334426B678CF00226B10 /* DetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58334326B678CF00226B10 /* DetailsDataModel.swift */; };
-		EC58334A26B690D600226B10 /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58334826B690D600226B10 /* DetailsCollectionViewCell.swift */; };
-		EC58334B26B690D600226B10 /* DetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC58334926B690D600226B10 /* DetailsCollectionViewCell.xib */; };
 		EC58334D26B6F58F00226B10 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58334C26B6F58F00226B10 /* String+.swift */; };
+		EC9604A326BC2A06005B2695 /* DetailsSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9604A226BC2A06005B2695 /* DetailsSectionModel.swift */; };
+		EC9604A626BC2A57005B2695 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = EC9604A526BC2A57005B2695 /* RxDataSources */; };
+		EC9604A826BC2A57005B2695 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = EC9604A726BC2A57005B2695 /* Differentiator */; };
+		EC9604AC26BC2BFC005B2695 /* InfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9604AA26BC2BFC005B2695 /* InfoCollectionViewCell.swift */; };
+		EC9604AD26BC2BFC005B2695 /* InfoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC9604AB26BC2BFC005B2695 /* InfoCollectionViewCell.xib */; };
+		EC9604B126BC2C44005B2695 /* ChartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9604AF26BC2C44005B2695 /* ChartCollectionViewCell.swift */; };
+		EC9604B226BC2C44005B2695 /* ChartCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC9604B026BC2C44005B2695 /* ChartCollectionViewCell.xib */; };
+		EC9604B626BC2C59005B2695 /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9604B426BC2C59005B2695 /* DetailsCollectionViewCell.swift */; };
+		EC9604B726BC2C59005B2695 /* DetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC9604B526BC2C59005B2695 /* DetailsCollectionViewCell.xib */; };
+		EC9604B926BC32C6005B2695 /* APIServices+getChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9604B826BC32C6005B2695 /* APIServices+getChartData.swift */; };
+		EC9604BC26BC32FD005B2695 /* ChartResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9604BB26BC32FD005B2695 /* ChartResponseModel.swift */; };
+		EC9604BE26BC3308005B2695 /* ChartDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9604BD26BC3308005B2695 /* ChartDataModel.swift */; };
+		EC9604C026BC3316005B2695 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9604BF26BC3316005B2695 /* HistoryModel.swift */; };
 		ECB8C91426B55174004F7C89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C91326B55174004F7C89 /* AppDelegate.swift */; };
 		ECB8C91626B55174004F7C89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C91526B55174004F7C89 /* SceneDelegate.swift */; };
 		ECB8C91E26B55174004F7C89 /* CryptocurrencyTracking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C91C26B55174004F7C89 /* CryptocurrencyTracking.xcdatamodeld */; };
@@ -82,9 +93,18 @@
 		EC4E7AED26B5CF8D0070DEC4 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		EC58334126B678BC00226B10 /* DetailsResponsesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsResponsesModel.swift; sourceTree = "<group>"; };
 		EC58334326B678CF00226B10 /* DetailsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDataModel.swift; sourceTree = "<group>"; };
-		EC58334826B690D600226B10 /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
-		EC58334926B690D600226B10 /* DetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCollectionViewCell.xib; sourceTree = "<group>"; };
 		EC58334C26B6F58F00226B10 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		EC9604A226BC2A06005B2695 /* DetailsSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsSectionModel.swift; sourceTree = "<group>"; };
+		EC9604AA26BC2BFC005B2695 /* InfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC9604AB26BC2BFC005B2695 /* InfoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCollectionViewCell.xib; sourceTree = "<group>"; };
+		EC9604AF26BC2C44005B2695 /* ChartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC9604B026BC2C44005B2695 /* ChartCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartCollectionViewCell.xib; sourceTree = "<group>"; };
+		EC9604B426BC2C59005B2695 /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC9604B526BC2C59005B2695 /* DetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCollectionViewCell.xib; sourceTree = "<group>"; };
+		EC9604B826BC32C6005B2695 /* APIServices+getChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIServices+getChartData.swift"; sourceTree = "<group>"; };
+		EC9604BB26BC32FD005B2695 /* ChartResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartResponseModel.swift; sourceTree = "<group>"; };
+		EC9604BD26BC3308005B2695 /* ChartDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataModel.swift; sourceTree = "<group>"; };
+		EC9604BF26BC3316005B2695 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		ECB8C91026B55174004F7C89 /* CryptocurrencyTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptocurrencyTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB8C91326B55174004F7C89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECB8C91526B55174004F7C89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB8C98226B58CEC004F7C89 /* RxRelay in Frameworks */,
+				EC9604A826BC2A57005B2695 /* Differentiator in Frameworks */,
 				ECB8C97226B5846D004F7C89 /* ObjectMapper in Frameworks */,
 				ECB8C97A26B5899B004F7C89 /* Alamofire in Frameworks */,
 				EC4E7AEB26B5C1E10070DEC4 /* SDWebImageSVGCoder in Frameworks */,
@@ -144,6 +165,7 @@
 				ECB8C98026B58CEC004F7C89 /* RxSwift in Frameworks */,
 				ECB8C98626B58CEC004F7C89 /* RxBlocking in Frameworks */,
 				ECB8C97526B584B1004F7C89 /* Then in Frameworks */,
+				EC9604A626BC2A57005B2695 /* RxDataSources in Frameworks */,
 				5E354DCA4F3818F3DA7796E6 /* libPods-CryptocurrencyTracking.a in Frameworks */,
 				EC4E7AE526B5B74F0070DEC4 /* Reusable in Frameworks */,
 			);
@@ -198,13 +220,41 @@
 			path = "Coin Details Model";
 			sourceTree = "<group>";
 		};
-		EC58334726B6909B00226B10 /* Details Cell */ = {
+		EC9604A926BC2BE7005B2695 /* Info Cell */ = {
 			isa = PBXGroup;
 			children = (
-				EC58334826B690D600226B10 /* DetailsCollectionViewCell.swift */,
-				EC58334926B690D600226B10 /* DetailsCollectionViewCell.xib */,
+				EC9604AA26BC2BFC005B2695 /* InfoCollectionViewCell.swift */,
+				EC9604AB26BC2BFC005B2695 /* InfoCollectionViewCell.xib */,
+			);
+			path = "Info Cell";
+			sourceTree = "<group>";
+		};
+		EC9604AE26BC2C37005B2695 /* Chart Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EC9604AF26BC2C44005B2695 /* ChartCollectionViewCell.swift */,
+				EC9604B026BC2C44005B2695 /* ChartCollectionViewCell.xib */,
+			);
+			path = "Chart Cell";
+			sourceTree = "<group>";
+		};
+		EC9604B326BC2C4B005B2695 /* Details Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EC9604B426BC2C59005B2695 /* DetailsCollectionViewCell.swift */,
+				EC9604B526BC2C59005B2695 /* DetailsCollectionViewCell.xib */,
 			);
 			path = "Details Cell";
+			sourceTree = "<group>";
+		};
+		EC9604BA26BC32D6005B2695 /* Chart Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC9604BB26BC32FD005B2695 /* ChartResponseModel.swift */,
+				EC9604BD26BC3308005B2695 /* ChartDataModel.swift */,
+				EC9604BF26BC3316005B2695 /* HistoryModel.swift */,
+			);
+			path = "Chart Data Model";
 			sourceTree = "<group>";
 		};
 		ECB8C90726B55174004F7C89 = {
@@ -329,10 +379,13 @@
 		ECB8C93B26B57794004F7C89 /* Details Screen */ = {
 			isa = PBXGroup;
 			children = (
-				EC58334726B6909B00226B10 /* Details Cell */,
+				EC9604A926BC2BE7005B2695 /* Info Cell */,
+				EC9604AE26BC2C37005B2695 /* Chart Cell */,
+				EC9604B326BC2C4B005B2695 /* Details Cell */,
 				EC4E7AEC26B5CF8D0070DEC4 /* DetailsViewController.swift */,
 				EC4E7AED26B5CF8D0070DEC4 /* DetailsViewController.xib */,
 				EC4E7AD726B5B2100070DEC4 /* DetailsViewModel.swift */,
+				EC9604A226BC2A06005B2695 /* DetailsSectionModel.swift */,
 				EC4E7AD926B5B21A0070DEC4 /* DetailsNavigator.swift */,
 				EC4E7AD526B5B2020070DEC4 /* DetailsUseCase.swift */,
 			);
@@ -369,6 +422,7 @@
 			children = (
 				EC58333F26B6786600226B10 /* List All Coin Model */,
 				EC58334026B6788100226B10 /* Coin Details Model */,
+				EC9604BA26BC32D6005B2695 /* Chart Data Model */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -398,6 +452,7 @@
 				ECB8C98E26B58F4A004F7C89 /* APIServies+getAllCoin.swift */,
 				ECB8C99026B58F5A004F7C89 /* APIServies+getCoinDetails.swift */,
 				ECB8C9A726B5A997004F7C89 /* APIServies+getSearchResults.swift */,
+				EC9604B826BC32C6005B2695 /* APIServices+getChartData.swift */,
 			);
 			path = "Extensions APIServies";
 			sourceTree = "<group>";
@@ -458,6 +513,8 @@
 				EC4E7ADC26B5B6A00070DEC4 /* NSObject-Rx */,
 				EC4E7AE426B5B74F0070DEC4 /* Reusable */,
 				EC4E7AEA26B5C1E10070DEC4 /* SDWebImageSVGCoder */,
+				EC9604A526BC2A57005B2695 /* RxDataSources */,
+				EC9604A726BC2A57005B2695 /* Differentiator */,
 			);
 			productName = CryptocurrencyTracking;
 			productReference = ECB8C91026B55174004F7C89 /* CryptocurrencyTracking.app */;
@@ -495,6 +552,7 @@
 				EC4E7ADB26B5B6A00070DEC4 /* XCRemoteSwiftPackageReference "NSObject-Rx" */,
 				EC4E7AE326B5B74F0070DEC4 /* XCRemoteSwiftPackageReference "Reusable" */,
 				EC4E7AE926B5C1E10070DEC4 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */,
+				EC9604A426BC2A57005B2695 /* XCRemoteSwiftPackageReference "RxDataSources" */,
 			);
 			productRefGroup = ECB8C91126B55174004F7C89 /* Products */;
 			projectDirPath = "";
@@ -512,11 +570,13 @@
 			files = (
 				ECB8C96026B57D0B004F7C89 /* FollowsViewController.xib in Resources */,
 				ECB8C92326B55176004F7C89 /* LaunchScreen.storyboard in Resources */,
-				EC58334B26B690D600226B10 /* DetailsCollectionViewCell.xib in Resources */,
 				ECB8C92026B55176004F7C89 /* Assets.xcassets in Resources */,
+				EC9604AD26BC2BFC005B2695 /* InfoCollectionViewCell.xib in Resources */,
 				EC4E7AE226B5B71F0070DEC4 /* CoinCollectionViewCell.xib in Resources */,
+				EC9604B726BC2C59005B2695 /* DetailsCollectionViewCell.xib in Resources */,
 				ECB8C95226B57A83004F7C89 /* Localizable.strings in Resources */,
 				ECB8C93F26B577C5004F7C89 /* HomeViewController.xib in Resources */,
+				EC9604B226BC2C44005B2695 /* ChartCollectionViewCell.xib in Resources */,
 				ECB8C94926B578EB004F7C89 /* swiftgen.yml in Resources */,
 				EC4E7AEF26B5CF8D0070DEC4 /* DetailsViewController.xib in Resources */,
 			);
@@ -585,28 +645,35 @@
 				ECB8C99126B58F5A004F7C89 /* APIServies+getCoinDetails.swift in Sources */,
 				ECB8C9AB26B5A9BB004F7C89 /* BaseNavigationController.swift in Sources */,
 				ECB8C97D26B589B5004F7C89 /* APIServies.swift in Sources */,
-				EC58334A26B690D600226B10 /* DetailsCollectionViewCell.swift in Sources */,
 				ECB8C98926B58D1D004F7C89 /* BaseErrors.swift in Sources */,
 				EC4E7AEE26B5CF8D0070DEC4 /* DetailsViewController.swift in Sources */,
 				EC4E7AD626B5B2020070DEC4 /* DetailsUseCase.swift in Sources */,
+				EC9604BE26BC3308005B2695 /* ChartDataModel.swift in Sources */,
 				ECB8C93526B55770004F7C89 /* TabBarViewController.swift in Sources */,
+				EC9604A326BC2A06005B2695 /* DetailsSectionModel.swift in Sources */,
 				ECB8C91426B55174004F7C89 /* AppDelegate.swift in Sources */,
 				ECB8C97726B5857E004F7C89 /* DataModel.swift in Sources */,
 				EC58334426B678CF00226B10 /* DetailsDataModel.swift in Sources */,
 				ECB8C99526B59014004F7C89 /* SharedSequenceConvertibleType.swift in Sources */,
 				ECB8C96726B583B4004F7C89 /* CoinsResponses.swift in Sources */,
+				EC9604B626BC2C59005B2695 /* DetailsCollectionViewCell.swift in Sources */,
+				EC9604B126BC2C44005B2695 /* ChartCollectionViewCell.swift in Sources */,
 				ECB8C99D26B5A382004F7C89 /* FollowsNavigator.swift in Sources */,
 				ECB8C93826B57772004F7C89 /* TabBarItems.swift in Sources */,
 				ECB8C96B26B583E1004F7C89 /* CoinDetailsModel.swift in Sources */,
 				ECB8C91E26B55174004F7C89 /* CryptocurrencyTracking.xcdatamodeld in Sources */,
 				ECB8C9A826B5A997004F7C89 /* APIServies+getSearchResults.swift in Sources */,
+				EC9604B926BC32C6005B2695 /* APIServices+getChartData.swift in Sources */,
+				EC9604C026BC3316005B2695 /* HistoryModel.swift in Sources */,
 				ECB8C91626B55174004F7C89 /* SceneDelegate.swift in Sources */,
 				ECB8C99B26B5A361004F7C89 /* HomeUseCase.swift in Sources */,
+				EC9604AC26BC2BFC005B2695 /* InfoCollectionViewCell.swift in Sources */,
 				EC4E7ADA26B5B21A0070DEC4 /* DetailsNavigator.swift in Sources */,
 				EC58334226B678BC00226B10 /* DetailsResponsesModel.swift in Sources */,
 				ECB8C9AD26B5A9C9004F7C89 /* ViewModel.swift in Sources */,
 				ECB8C99926B5A353004F7C89 /* HomeViewModel.swift in Sources */,
 				ECB8C96926B583C1004F7C89 /* CoinModel.swift in Sources */,
+				EC9604BC26BC32FD005B2695 /* ChartResponseModel.swift in Sources */,
 				ECB8C93E26B577C5004F7C89 /* HomeViewController.swift in Sources */,
 				ECB8C9A426B5A94F004F7C89 /* CoinRemoteRepository.swift in Sources */,
 				ECB8C98F26B58F4A004F7C89 /* APIServies+getAllCoin.swift in Sources */,
@@ -846,6 +913,14 @@
 				minimumVersion = 1.6.0;
 			};
 		};
+		EC9604A426BC2A57005B2695 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 		ECB8C97026B5846D004F7C89 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
@@ -895,6 +970,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EC4E7AE926B5C1E10070DEC4 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */;
 			productName = SDWebImageSVGCoder;
+		};
+		EC9604A526BC2A57005B2695 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9604A426BC2A57005B2695 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		EC9604A726BC2A57005B2695 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9604A426BC2A57005B2695 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
 		};
 		ECB8C97126B5846D004F7C89 /* ObjectMapper */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -12,6 +12,8 @@ import RxCocoa
 protocol DetailsUseCaseType {
     
     func getCoinDetails(uuid: String) -> Observable<CoinDetailsModel>
+    
+    func getChartData(uuid: String, timePeriod: String) -> Observable<[HistoryModel]>
 }
 
 struct DetailsUseCase: DetailsUseCaseType {
@@ -20,5 +22,9 @@ struct DetailsUseCase: DetailsUseCaseType {
     
     func getCoinDetails(uuid: String) -> Observable<CoinDetailsModel> {
         return coinRemoteRepository.getCoinDetails(uuid: uuid)
+    }
+    
+    func getChartData(uuid: String, timePeriod: String) -> Observable<[HistoryModel]> {
+        return coinRemoteRepository.getChartData(uuid: uuid, timePeriod: timePeriod)
     }
 }

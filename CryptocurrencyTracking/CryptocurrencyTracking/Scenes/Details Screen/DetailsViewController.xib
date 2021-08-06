@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="usJ-4P-9xp">
-                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TTz-rX-L2F">
                         <size key="itemSize" width="128" height="128"/>
@@ -33,12 +33,14 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="usJ-4P-9xp" secondAttribute="bottom" id="DcU-ss-Vlu"/>
-                <constraint firstItem="usJ-4P-9xp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QWc-pG-Fww"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="usJ-4P-9xp" secondAttribute="trailing" id="W7b-7L-TWe"/>
-                <constraint firstItem="usJ-4P-9xp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="up1-9e-VZE"/>
+                <constraint firstItem="usJ-4P-9xp" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="3iv-2p-LKs"/>
+                <constraint firstItem="usJ-4P-9xp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QIi-6Q-Bhx"/>
+                <constraint firstItem="usJ-4P-9xp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="eEs-FD-AG3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="usJ-4P-9xp" secondAttribute="trailing" id="fkg-7m-3J5"/>
+                <constraint firstItem="usJ-4P-9xp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ngS-uZ-CkC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="usJ-4P-9xp" secondAttribute="bottom" id="q1m-gY-8yl"/>
             </constraints>
-            <point key="canvasLocation" x="137.68115942028987" y="94.419642857142847"/>
+            <point key="canvasLocation" x="123.18840579710145" y="122.54464285714285"/>
         </view>
     </objects>
     <resources>

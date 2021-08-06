@@ -13,7 +13,6 @@ struct DetailsViewModel {
     
     let useCase: DetailsUseCaseType
     let coin: CoinModel
-    let dataSource = BehaviorRelay<[CoinDetailsModel]>(value: [CoinDetailsModel()])
 }
 
 extension DetailsViewModel: ViewModel {
@@ -23,22 +22,33 @@ extension DetailsViewModel: ViewModel {
     }
     
     struct Output {
-        var loadData: Driver<Void>
-        var details: Driver<[CoinDetailsModel]>
+        var loadData: Driver<CoinDetailsModel>
+        var details: Driver<[DetailsSectionModel]>
     }
     
     func transform(_ input: Input) -> Output {
         
-        let loadData = input.loadTrigger
+        let loadDetails = input.loadTrigger
             .flatMapLatest({ _ in
                 return useCase.getCoinDetails(uuid: coin.uuid)
                     .asDriverOnErrorJustComplete()
             })
-            .do { coinDetails in
-                return dataSource.accept([coinDetails])
-            }
-            .mapToVoid()
         
-        return Output(loadData: loadData, details: dataSource.asDriver())
+        let loadCharts = input.loadTrigger
+            .flatMapLatest { _ in
+                return useCase.getChartData(uuid: coin.uuid, timePeriod: "1y")
+                    .asDriverOnErrorJustComplete()
+            }
+        
+        let details = Driver.combineLatest(loadDetails, loadCharts)
+            .map { (coinDetails, history) -> [DetailsSectionModel] in
+                return [.detail(items: [
+                    .info(model: coinDetails),
+                    .chart(model: history),
+                    .detail(model: coinDetails)
+                ])]
+            }
+        
+        return Output(loadData: loadDetails, details: details)
     }
 }

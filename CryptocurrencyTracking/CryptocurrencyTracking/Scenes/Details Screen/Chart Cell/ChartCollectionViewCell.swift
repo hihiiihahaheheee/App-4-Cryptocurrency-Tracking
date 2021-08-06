@@ -1,5 +1,5 @@
 //
-//  DetailsCollectionViewCell.swift
+//  ChartCollectionViewCell.swift
 //  CryptocurrencyTracking
 //
 //  Created by Thuận Nguyễn Văn on 05/08/2021.
@@ -8,7 +8,7 @@
 import UIKit
 import Reusable
 
-final class DetailsCollectionViewCell: UICollectionViewCell, NibReusable {
+final class ChartCollectionViewCell: UICollectionViewCell, NibReusable {
 
     override func awakeFromNib() {
         super.awakeFromNib()
