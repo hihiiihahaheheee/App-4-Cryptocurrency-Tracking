@@ -23,11 +23,15 @@ extension DetailsViewModel: ViewModel {
     }
     
     struct Output {
+        var title: Driver<String>
         var loadChart: Driver<[HistoryModel]>
         var details: Driver<[DetailsSectionModel]>
     }
     
     func transform(_ input: Input) -> Output {
+        
+        let title = input.loadTrigger
+            .map { coin.name }
         
         let loadCharts = input.timeTrigger
             .flatMapLatest { timePeriod -> Driver<[HistoryModel]> in
@@ -48,6 +52,8 @@ extension DetailsViewModel: ViewModel {
                 ])]
             }
         
-        return Output(loadChart: loadCharts, details: details)
+        return Output(title: title,
+                      loadChart: loadCharts,
+                      details: details)
     }
 }

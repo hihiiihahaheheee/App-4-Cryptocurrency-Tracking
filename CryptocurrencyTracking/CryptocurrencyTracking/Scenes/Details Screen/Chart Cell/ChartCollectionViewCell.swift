@@ -61,6 +61,7 @@ final class ChartCollectionViewCell: UICollectionViewCell, NibReusable {
             $0.animate(xAxisDuration: 1.2)
             $0.rightAxis.enabled = false
             $0.xAxis.labelPosition = .bottom
+            $0.xAxis.enabled = false
             $0.legend.enabled = false
         }
     }

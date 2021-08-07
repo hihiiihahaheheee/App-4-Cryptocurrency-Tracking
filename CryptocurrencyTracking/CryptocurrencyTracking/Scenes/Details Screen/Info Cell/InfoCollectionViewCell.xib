@@ -47,6 +47,14 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhv-6s-U9r">
+                        <rect key="frame" x="319" y="0.0" width="35" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="4UO-E7-iU9"/>
+                            <constraint firstAttribute="width" constant="35" id="DNE-v2-Jis"/>
+                        </constraints>
+                        <state key="normal" image="unfollow"/>
+                    </button>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -55,10 +63,12 @@
                 <constraint firstItem="eb2-0b-G2n" firstAttribute="top" secondItem="l3p-QZ-Adw" secondAttribute="bottom" constant="30" id="JOg-so-LrV"/>
                 <constraint firstAttribute="trailing" secondItem="QzT-wW-yKZ" secondAttribute="trailing" constant="30" id="PGA-dY-EnB"/>
                 <constraint firstItem="l3p-QZ-Adw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="TCE-of-3Nf"/>
+                <constraint firstAttribute="trailing" secondItem="nhv-6s-U9r" secondAttribute="trailing" constant="30" id="TrT-qO-jEg"/>
                 <constraint firstItem="g7A-R3-lCN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="WOZ-2A-OO4"/>
                 <constraint firstAttribute="trailing" secondItem="l3p-QZ-Adw" secondAttribute="trailing" constant="25" id="akl-OE-Rgh"/>
                 <constraint firstAttribute="bottom" secondItem="g7A-R3-lCN" secondAttribute="bottom" constant="20" id="n4K-0g-4Gd"/>
                 <constraint firstItem="eb2-0b-G2n" firstAttribute="leading" secondItem="g7A-R3-lCN" secondAttribute="trailing" constant="30" id="p6R-OM-Mws"/>
+                <constraint firstItem="nhv-6s-U9r" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pSb-Rl-IQj"/>
                 <constraint firstItem="l3p-QZ-Adw" firstAttribute="leading" secondItem="g7A-R3-lCN" secondAttribute="trailing" constant="30" id="vQ5-TC-dOi"/>
                 <constraint firstItem="g7A-R3-lCN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="vk9-89-dw8"/>
             </constraints>
@@ -72,4 +82,7 @@
             <point key="canvasLocation" x="379.71014492753625" y="120.20089285714285"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="unfollow" width="64" height="64"/>
+    </resources>
 </document>

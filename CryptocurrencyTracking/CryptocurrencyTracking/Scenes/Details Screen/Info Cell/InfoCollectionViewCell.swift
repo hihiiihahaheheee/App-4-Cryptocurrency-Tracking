@@ -41,6 +41,6 @@ final class InfoCollectionViewCell: UICollectionViewCell, NibReusable {
         imageView.sd_setImage(with: iconUrl)
         coinNameLabel.text = name
         priceLabel.text = coinDetails.price.formatPrice(price: coinDetails.price)
-        changeLabel.text = coinDetails.change.formatChange(change: coinDetails.change)
+        changeLabel.text = coinDetails.change.formatChange(change: coinDetails.change) + "%"
     }
 }
