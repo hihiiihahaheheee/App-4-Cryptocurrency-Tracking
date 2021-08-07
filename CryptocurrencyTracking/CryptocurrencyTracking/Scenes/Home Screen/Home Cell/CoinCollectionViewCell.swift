@@ -44,6 +44,6 @@ final class CoinCollectionViewCell: UICollectionViewCell, NibReusable {
         coinIconImage.sd_setImage(with: iconUrl)
         coinNameLabel.text = name
         coinPriceLabel.text = coin.price.formatPrice(price: coin.price)
-        changeLabel.text = coin.change.formatChange(change: coin.change)
+        changeLabel.text = coin.change.formatChange(change: coin.change) + "%"
     }
 }

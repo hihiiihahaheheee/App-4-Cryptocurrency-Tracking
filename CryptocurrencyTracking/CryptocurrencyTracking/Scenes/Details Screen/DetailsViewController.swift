@@ -55,6 +55,10 @@ extension DetailsViewController: Bindable {
                                             .asDriver(onErrorJustReturn: "24h"))
         let output = viewModel.transform(input)
         
+        output.title
+            .drive(self.rx.title)
+            .disposed(by: rx.disposeBag)
+        
         output.loadChart
             .drive()
             .disposed(by: rx.disposeBag)
@@ -80,10 +84,10 @@ extension DetailsViewController {
                 cell.timeSegmentsChanged = { self.timeTrigger.onNext($0) }
                 cell.configureCell(history: model)
                 return cell
-            case .detail( _ ):
+            case .detail(let model):
                 let cell = collectionView.dequeueReusableCell(for: indexPath,
                                                               cellType: DetailsCollectionViewCell.self)
-                cell.backgroundColor = .yellow
+                cell.configureCell(details: model)
                 return cell
             }
         }
@@ -97,9 +101,9 @@ extension DetailsViewController: UICollectionViewDelegateFlowLayout {
         case .info:
             return CGSize(width: detailsCollectionView.frame.width, height: 130)
         case .chart:
-            return CGSize(width: detailsCollectionView.frame.width, height: 350)
+            return CGSize(width: detailsCollectionView.frame.width, height: 360)
         case .detail:
-            return CGSize(width: detailsCollectionView.frame.width, height: 400)
+            return CGSize(width: detailsCollectionView.frame.width, height: 180)
         }
     }
     

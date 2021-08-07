@@ -25,7 +25,7 @@
                         </constraints>
                     </view>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OEE-Kb-o5f">
-                        <rect key="frame" x="40" y="300" width="530" height="41"/>
+                        <rect key="frame" x="40" y="315" width="530" height="41"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="oWf-TF-Z6H"/>
                         </constraints>
@@ -45,10 +45,10 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="OEE-Kb-o5f" firstAttribute="top" secondItem="1gq-Co-5t2" secondAttribute="bottom" id="3Tt-7Y-rnK"/>
                 <constraint firstAttribute="trailing" secondItem="OEE-Kb-o5f" secondAttribute="trailing" constant="40" id="FZn-re-E9v"/>
                 <constraint firstItem="1gq-Co-5t2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Y4Y-lV-lYP"/>
                 <constraint firstAttribute="trailing" secondItem="1gq-Co-5t2" secondAttribute="trailing" id="ekR-N2-ubS"/>
+                <constraint firstItem="OEE-Kb-o5f" firstAttribute="top" secondItem="1gq-Co-5t2" secondAttribute="bottom" constant="15" id="ezl-hh-4Bg"/>
                 <constraint firstItem="OEE-Kb-o5f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="40" id="iBY-Fv-KOL"/>
                 <constraint firstItem="1gq-Co-5t2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lew-zg-9Pe"/>
             </constraints>

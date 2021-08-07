@@ -17,6 +17,6 @@ extension String {
     public func formatChange(change: String) -> String {
         guard let changeFloat = Float(change) else { return "" }
         let changeFormatted = Float(Int(changeFloat * 100)) / 100.00
-        return "\(changeFormatted)%"
+        return "\(changeFormatted)"
     }
 }
