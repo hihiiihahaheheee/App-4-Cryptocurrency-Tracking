@@ -28,7 +28,12 @@ struct APIServices {
     
     func request<T: Mappable>(URL: String, responseType: T.Type) -> Observable<T> {
         return Observable.create { observable in
-            self.alamofireManager.request(URL)
+            
+            let headers: HTTPHeaders = [
+                "x-access-token": "\(APIKey.shared.key)"
+              ]
+            
+            self.alamofireManager.request(URL, headers: headers)
                 .validate()
                 .responseJSON { response in
                     switch response.result {
