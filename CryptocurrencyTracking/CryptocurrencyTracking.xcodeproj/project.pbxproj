@@ -81,6 +81,7 @@
 		ECB8C9AB26B5A9BB004F7C89 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C9AA26B5A9BB004F7C89 /* BaseNavigationController.swift */; };
 		ECB8C9AD26B5A9C9004F7C89 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C9AC26B5A9C9004F7C89 /* ViewModel.swift */; };
 		ECB8C9AF26B5A9DD004F7C89 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8C9AE26B5A9DD004F7C89 /* Bindable.swift */; };
+		ECD2831F26BFA1B2007BA35F /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2831E26BFA1B2007BA35F /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,6 +152,7 @@
 		ECB8C9AA26B5A9BB004F7C89 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		ECB8C9AC26B5A9C9004F7C89 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		ECB8C9AE26B5A9DD004F7C89 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		ECD2831E26BFA1B2007BA35F /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		ED612849068A1012CFA228B0 /* Pods-CryptocurrencyTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptocurrencyTracking.debug.xcconfig"; path = "Target Support Files/Pods-CryptocurrencyTracking/Pods-CryptocurrencyTracking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -475,6 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				ECB8C98C26B58E37004F7C89 /* CoinURLs.swift */,
+				ECD2831E26BFA1B2007BA35F /* APIKey.swift */,
 			);
 			path = URLs;
 			sourceTree = "<group>";
@@ -691,6 +694,7 @@
 				EC9604BC26BC32FD005B2695 /* ChartResponseModel.swift in Sources */,
 				ECB8C93E26B577C5004F7C89 /* HomeViewController.swift in Sources */,
 				ECB8C9A426B5A94F004F7C89 /* CoinRemoteRepository.swift in Sources */,
+				ECD2831F26BFA1B2007BA35F /* APIKey.swift in Sources */,
 				ECB8C98F26B58F4A004F7C89 /* APIServies+getAllCoin.swift in Sources */,
 				ECB8C9A126B5A39C004F7C89 /* FollowsUseCase.swift in Sources */,
 				ECB8C95A26B57C3E004F7C89 /* Assets.swift in Sources */,
