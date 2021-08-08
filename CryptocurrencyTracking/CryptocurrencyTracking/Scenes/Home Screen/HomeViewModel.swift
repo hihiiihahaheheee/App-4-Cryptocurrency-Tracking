@@ -33,7 +33,7 @@ extension HomeViewModel: ViewModel {
         var tempDataForSearch = [CoinModel]()
         let dataSource = BehaviorRelay<[CoinModel]>(value: [CoinModel()])
         
-        let coins = input.loadTrigger
+        let loadCoins = input.loadTrigger
             .flatMapLatest { _ in
                 return useCase.getAllCoin()
                     .asDriverOnErrorJustComplete()
@@ -42,9 +42,10 @@ extension HomeViewModel: ViewModel {
                 dataSource.accept(data)
                 tempDataForSearch = data
             }
+            .mapToVoid()
         
         let selected = input.selectTrigger
-            .withLatestFrom(coins) { indexPath, coins in
+            .withLatestFrom(dataSource.asDriver()) { indexPath, coins in
                 return coins[indexPath.row]
             }
             .do(onNext: navigator.pushDetailsViewController(coin:))
@@ -62,7 +63,7 @@ extension HomeViewModel: ViewModel {
             }
             .mapToVoid()
         
-        let voidDrivers = [selected, searched]
+        let voidDrivers = [loadCoins, selected, searched]
 
         return Output(coins: dataSource.asDriver(),
                       voidDrivers: voidDrivers)
